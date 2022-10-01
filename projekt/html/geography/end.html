@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kvíz</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="geo">
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore"> 0</h1>
+            <form action="" class="end-form-container">
+                <h2 id="end-text">Add meg a játékos neved</h2>
+                <input type="text" name="name" id="username" placeholder="Írd be a neved">
+                <button class="btn" id="saveScoreBtn" type="submit"
+                 onclick="saveHighScore(event)" disabled>
+                    Mentés
+                </button>
+            </form>
+            <a href="/html/geography/game.html" class="btn">újrakezdés</a>
+            <a href="/html/geography/index.html" class="btn">Főoldal</a>
+        </div>
+    </div>
+</body>
+<script src="/javascript/geography/end.js"></script>
+</html>
