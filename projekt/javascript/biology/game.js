@@ -167,7 +167,7 @@ startGame = () => {
 }
 getNewQuestion = () => {
     if (avaibleQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) /*Ha eléri a max kérdést akkor átdob az end.html-re*/ {
-        localStorage.setItem('mostRecentScore', score)
+        localStorage.setItem('mostRecentScoreB', score)
         return window.location.assign('/html/biology/end.html')
     }
     /*egyébb esetben*/

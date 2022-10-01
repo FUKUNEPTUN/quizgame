@@ -19,8 +19,17 @@ body{
     transition: transform 100ms;
 }
 .choice-prefix{
-    padding: 2rem 2.5rem;
+    font-size: 100%;
     font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+}
+.choice-prefix2{
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: center;
 
 }
 .choice-text{
@@ -60,9 +69,41 @@ body{
     background-color: green;
     width: 0%;
 }
-
+#game{
+    height: 100%;
+}
 @media screen and (max-width: 768px) {
     .choice-container{
-        min-width: 40rem;
+        min-width: 30rem;
+    }
+    #progressBar{
+        height: 2rem;
+        width: 20rem;
+        border:0.2rem solid green;
+        border-radius: 50px;
+        overflow: hidden;
+    
+    }
+}
+@media screen and (max-width: 460px) {
+    .choice-container{
+        width: 100%;
+        height: rem;
+    }
+    #progressBar{
+        height: 2rem;
+        width: 20rem;
+        border:0.2rem solid green;
+        border-radius: 50px;
+        overflow: hidden;
+    
+    }
+    #question{
+        width: 100%;
+        font-size: 2.6rem;
+    }
+    #hud{
+        max-width: 30rem;
+        display: flex;
     }
 }
